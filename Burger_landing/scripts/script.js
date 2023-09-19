@@ -1,0 +1,1 @@
+doocument.getElementsByClassName( classNames: "main-title")[0]
