@@ -16,19 +16,19 @@
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-item">
-                            <a href="#">Kodėl pas mus?</a>
+                            <a data-link="why">Kodėl mes?</a>
                         </li>
                         
                         <li class="menu-item">
-                            <a href="#">MENIU</a>
+                            <a data-link="products">MENIU</a>
                         </li>
                         
                         <li class="menu-item">
-                            <a href="#">UŽSAKYMAS</a>
+                            <a data-link="order">UŽSAKYMAS</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="currency" title="Pakeisti valiutą">$</div>
+                <div class="currency" title="Pakeisti valiutą" id="change-currency">$</div>
             </div>
         </header>
 
@@ -38,11 +38,11 @@
                     <span class="main-small-info">Naujas meniu</span>
                     <h1 class="main-title">ČEDERIO BURGERIS</h1>
                     <p class="main-text">
-                        Mes atnaujinome meniu. Skubėkite išbandyti vasaros naujienas ir mėgautis patikalų įvairove.
+                        Mes atnaujinome meniu. Skubėkite išbandyti vasaros naujienas ir mėgautis patiekalų įvairove.
                         Gaminame burgerius iš ekologiškų produktų!!!
                     </p>
                     <div class="main-action">
-                        <button class="button">Žiūrėti meniu</button>
+                        <button class="button" id="main-action-button">Žiūrėti meniu</button>
                     </div>
 
                 </div>
@@ -51,7 +51,7 @@
             </div>
         </section>
     </section> 
-    <section class="why">
+    <section class="why" id="why">
         <div class="container">
             <div class="why-title common-title">Kuo mes geriausi?</div>
             <div class="why-items">
@@ -73,7 +73,7 @@
             </div>    
         </div>  
     </section>
-    <section class="products">
+    <section class="products" id="products">
         <div class="container">
             <div class="products-title common-title">Išsirinkite savo burgerį</div>
             <div class="products-items">
@@ -85,7 +85,7 @@
                     <div class="products-item-text">Котлета из говядины криспи, булочка, томат, сыр Чеддер, грудинка, лук красный, салат айсбер, майонез, кетчуп, сырный соус</div>  
                     <div class="products-item-extra">
                          <div class="products-items-info">
-                            <div class="products-item-price">8$</div>
+                            <div class="products-item-price" data base price="8">8$</div>
                             <div class="products-item-weight">360 gr.</div>
                          </div>
                         <div class="products-item-action">
@@ -110,7 +110,7 @@
                     <div class="products-item-text">Булочка бриошь с кунжутом, куриная котлета, сыр чеддер, томат, огурец маринованный, лук маринованный, салат Ромен, бекон, соус BBQ</div>  
                     <div class="products-item-extra">
                          <div class="products-items-info">
-                            <div class="products-item-price">7$</div>
+                            <div class="products-item-price" data base price="7">7$</div>
                             <div class="products-item-weight">390 gr.</div>
                          </div>
                         <div class="products-item-action">
@@ -137,7 +137,7 @@
                     <div class="products-item-text">Две говяжьи котлеты, сыр чеддер, салат романо, маринованные огурцы, свежий томат, бекон, красный лук, соус бургер, горчица</div>  
                     <div class="products-item-extra">
                         <div class="products-items-info">
-                            <div class="products-item-price">10$</div>
+                            <div class="products-item-price" data base price="10">10$</div>
                             <div class="products-item-weight">420 gr.</div>
                          </div>
                          <div class="products-item-action">
@@ -163,7 +163,7 @@
                     <div class="products-item-text">Булочка для бургера, говяжья котлета, красный лук, сыр, охотничья колбаска, соус барбекю, соус сырный, салат айсберг</div>  
                     <div class="products-item-extra">
                         <div class="products-items-info">
-                            <div class="products-item-price">7$</div>
+                            <div class="products-item-price" data base price="7">7$</div>
                             <div class="products-item-weight">220 gr.</div>
                         </div>
                         <div class="products-item-action">
@@ -188,7 +188,7 @@
                     <div class="products-item-text">Булочка для бургера, говяжья котлета, грудинка, помидор, огурец маринованный, сыр, сырный соус, кетчуп, зелень</div>  
                     <div class="products-item-extra">
                         <div class="products-items-info">
-                            <div class="products-item-price">8$</div>
+                            <div class="products-item-price"data base price="8">8$</div>
                             <div class="products-item-weight">220 gr.</div>
                         </div>
                         <div class="products-item-action">
@@ -213,7 +213,7 @@
                 <div class="products-item-text">Булочка для бургера, котлета куриная, грудинка, яйцо, огурец маринованный, криспи лук, кетчуп, соус сырный, горчица, зелень</div>  
                 <div class="products-item-extra">
                     <div class="products-items-info">
-                        <div class="products-item-price">9$</div>
+                        <div class="products-item-price" data base price="9">9$</div>
                         <div class="products-item-weight">320 gr.</div>
                     </div>
                     <div class="products-item-action">
@@ -238,7 +238,7 @@
                 <div class="products-item-text">Булочка для бургера, вегетарианская котлета, красный лук, сыр, свежий томат, соус барбекю, соус сырный, салат айсберг</div>  
                 <div class="products-item-extra">
                     <div class="products-items-info">
-                        <div class="products-item-price">8$</div>
+                        <div class="products-item-price" data base price="8">8$</div>
                         <div class="products-item-weight">280 gr.</div>
                     </div>
                     <div class="products-item-action">
@@ -262,7 +262,7 @@
                 <div class="products-item-text">Булочка для бургера, говяжья котлета, грудинка, помидор, огурец маринованный, красный лук, сыр, перец халапеньо, кетчуп, зелень</div>  
                 <div class="products-item-extra">
                     <div class="products-items-info">
-                        <div class="products-item-price">7$</div>
+                        <div class="products-item-price" data base price="7">7$</div>
                         <div class="products-item-weight">380 gr.</div>
                     </div>
                     <div class="products-item-action">
@@ -286,7 +286,7 @@
                 <div class="products-item-text">Булочка для бургера, две говяжьи котлеты, двойной сыр чеддар, огурец маринованный, криспи лук, кетчуп, соус сырный, горчица, зелень</div>  
                 <div class="products-item-extra">
                     <div class="products-items-info">
-                        <div class="products-item-price">11$</div>
+                        <div class="products-item-price" data base price="11">11$</div>
                         <div class="products-item-weight">400 gr.</div>
                     </div>
                     <div class="products-item-action">
@@ -310,7 +310,7 @@
                 <div class="products-item-text">Булочка для бургера, говяжья котлета, бекон, сыр чеддар, яйцо, салями, соус барбекю, соус сырный, салат айсберг, свежий томат</div>  
                 <div class="products-item-extra">
                     <div class="products-items-info">
-                        <div class="products-item-price">9$</div>
+                        <div class="products-item-price" data base price="9">9$</div>
                         <div class="products-item-weight">300 gr.</div>
                     </div>
                     <div class="products-item-action">
@@ -334,7 +334,7 @@
                 <div class="products-item-text">Булочка для бургера, вегетарианская котлета из нута, цуккини на гриле, помидор, огурец маринованный, сыр, горчичный соус, кетчуп, зелень</div>  
                 <div class="products-item-extra">
                     <div class="products-items-info">
-                        <div class="products-item-price">9$</div>
+                        <div class="products-item-price" data base price="9">9$</div>
                         <div class="products-item-weight">300 gr.</div>
                     </div>
                     <div class="products-item-action">
@@ -358,7 +358,7 @@
                 <div class="products-item-text">Булочка для бургера, котлета говяжья, грудинка, красный лук, огурец маринованный, томат, кетчуп, двойной сыр чеддар, горчица, зелень</div>  
                 <div class="products-item-extra">
                     <div class="products-items-info">
-                        <div class="products-item-price">9$</div>
+                        <div class="products-item-price" data base price="9">9$</div>
                         <div class="products-item-weight">360 gr.</div>
                     </div>
                     <div class="products-item-action">
@@ -379,7 +379,7 @@
         
     </section>
 
-    <scetion class="order">
+    <section class="order" id="order">
         <div class="container">
             <div class="order-title common-title">Pateikite uŽsakymą</div> 
             <img src="images/order_image.png" alt="Burger in the box" class="order-image">  
@@ -387,20 +387,20 @@
                 <div class="order-form-text">Užpildykite užsakymo formą ir vadybininkas su Jumis susisieks, kad patvirtintų užsakymą</div>
                 <div class="order-form-inputs">
                     <div class="order-form-input">
-                        <input type="text" placeholder="Jūsų užsakymas">
+                        <input type="text" placeholder="Jūsų užsakymas" id="burger">
                     </div>
                     <div class="order-form-input">
-                        <input type="text" placeholder="Jūsų vardas">
+                        <input type="text" placeholder="Jūsų vardas" id="vardas">
                     </div>
                     <div class="order-form-input">
-                        <input type="text" placeholder="Jūsų telefonas">
+                        <input type="text" placeholder="Jūsų telefonas" id="phone">
                     </div>
-                    <button class="button">Pateikti užsakymą</button>
+                    <button class="button" id="order-action">Pateikti užsakymą</button>
 
                 </div>
             </div>
         </div>
-    </scetion>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="logo">
